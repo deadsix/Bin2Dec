@@ -12,7 +12,7 @@ function convertToDecimal(){
 }
 
 function checkIfBinary(keyPressed){
-    if(keyPressed.key != '0' && keyPressed.key != '1' && keyPressed.key != 'Delete'  && keyPressed.key != 'Backspace' && keyPressed.key != 'ArrowLeft'&& keyPressed.key != 'ArrowRight'&& keyPressed.key != 'ArrowUp'&& keyPressed.key != 'ArrowDown'&& keyPressed.key != 'Tab' ){
+    if(keyPressed.key != '0' && keyPressed.key != '1' && keyPressed.key != 'Delete' && keyPressed.key != 'Backspace' && keyPressed.key != 'ArrowLeft'&& keyPressed.key != 'ArrowRight'&& keyPressed.key != 'ArrowUp'&& keyPressed.key != 'ArrowDown'&& keyPressed.key != 'Tab' ){
         alert("You can only enter a 0 or 1 in this field");
     }
 }
