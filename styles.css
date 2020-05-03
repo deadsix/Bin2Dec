@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+}
+
+.page-title{
+    margin: 70px 0px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 50%;
+}
+
+.binary-input-label{
+    font-size: 20px;
+}
+
+.binary-input{
+    width: 100px;
+
+    margin-left: 10px;
+}
+
+.calculate-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 50%;
+}
+
+.output-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    width: 50%;
+}
+
+.calc-btn{
+    margin: 30px 0px;
+}
+
+.decimal-output-label{
+    font-size: 20px;
+}
+
+.decimal-output{
+    width: 100px;
+
+    margin-left: 10px;
+}
+
+.binary-input:invalid + .validity::after{
+    position: absolute;
+    padding-left: 5px;
+    content: '✖';
+    color: red;
+}
+
+.binary-input:valid + .validity::after{
+    position: absolute;
+    padding-left: 5px;
+    content: '✓';
+    color: green;
+}

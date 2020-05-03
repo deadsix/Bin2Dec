@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal Converter</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 class="page-title">Binary to Decimal Calculator</h1>
+    <!-- Text and element to put in a binary number-->
+    <div class="input-container">
+       <label for="binary-input" class="binary-input-label">Enter binary digits to be converted to decimal:</label>
+       <input type="text" name="binary-input" class="binary-input" pattern="[0-1]*" required> <span class="validity"></span>
+    </div>
+    <!-- Calculate button fires off the JS to convert Binary to Decimal-->
+    <div class="calculate-container">
+        <button class="calc-btn" type="button">Convert Binary to Decimal</button>
+    </div>
+    <!-- Output element for the converted decimal number-->    
+    <div class="output-container">
+        <label for="decimal-output" class="decimal-output-label">The decimal equivalent is:</label>
+        <input type="number" name="decimal-output" class="decimal-output" readonly> 
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
